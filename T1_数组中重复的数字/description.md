@@ -36,3 +36,7 @@
 
 题目来源：力扣（LeetCode）  
 链接：https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof
+
+
+#### 进阶：长度为1+n的数组里元素值都是1～n，要求不能改变原数组
+除了划定辅助空间的方式，我们还可以使用`二分查找+统计`的方式，具体请看 adv_ans.py
