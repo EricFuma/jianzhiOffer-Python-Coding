@@ -29,6 +29,10 @@
 可以看下面这个例子：   
 ![计数排序](https://upload-images.jianshu.io/upload_images/5199060-07c0bb721ba1aeb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+测试用例：
+1）存在多个重复的数字
+2）不存在重复数字
+3）无效输入——空数组
 
 题目来源：力扣（LeetCode）  
 链接：https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof
