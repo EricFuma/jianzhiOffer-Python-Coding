@@ -1,5 +1,9 @@
 class Solution:
     def findRepeatNumber(self, nums: List[int]) -> int:
+        # 特判：空数组
+        if not nums:
+            return None
+        
         # 3. 计数排序
         i = 0
         while i < len(nums):
@@ -42,3 +46,6 @@ class Solution:
             else:
                 return e
         '''
+        
+        # 特判：没有重复 
+        return None
