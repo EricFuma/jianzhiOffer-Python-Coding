@@ -28,6 +28,17 @@
 那stack1没有复原怎么办？为啥要复原啊，就当它是一个队列的元素分别存储在两个栈中不行吗，每个元素之间的相对顺序又没有破坏。。。真是醉了。
 
 
+#### 进阶题：用两个队列实现栈结构
+- 入栈：没啥好说的，就用一个queue来存储就好了
+- 出栈：这就没办法了，我能想到的就是按照原题方法1我那种不断“还原”的方式来做，具体流程如下  
+
+
+初始条件：self.queue1, self.queue2
+入栈val：判断哪个queue非空，将val放入非空的那个queue中  
+出栈：   判断哪个queue非空，假设queue1非空，就把queue1中的元素出队并存入queue2中，知道queue1中元素只有一个，就把这最后一个元素出队并返回，相当于是元素由queue1转到了queue2中。
+
+
+
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof
